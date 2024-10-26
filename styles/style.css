@@ -35,7 +35,7 @@
   font-weight: var(--font-weight-card-text);
   text-transform: uppercase;
   background-color: var(--background-color);
-  border: solid 2px black;
+  border: var(--border-card);
   min-block-size: 327px;
   margin: 100px auto;
   padding-block-start: 120px;
@@ -136,7 +136,7 @@
 
 .card {
   background-color: var(--background-color);
-  border: solid 2px black;
+  border: var(--border-card);
   font-size: 18px;
   margin-block-end: 50px;
 }
@@ -149,6 +149,9 @@
 
 .card-image-container {
   position: relative;
+  block-size: 375px;
+  inline-size: 100%;
+  overflow: hidden;
 }
 
 .card-image__label {
@@ -158,6 +161,7 @@
   mix-blend-mode: hard-light;
   font-family: var(--accent-font-family);
   font-size: 14px;
+  text-transform: uppercase;
   color: var(--color);
   opacity: 0.5;
   @supports (-webkit-text-stroke: 1px var(--border-label)) {
@@ -170,8 +174,10 @@
 .card-image {
   display: block;
   inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
   object-position: center center;
+  border: var(--border-card);
 }
 
 .card-image__filter-brightness {
@@ -208,7 +214,7 @@
 }
 
 .card-content {
-  padding: 27px 25px 25px;
+  padding: 24px 25px 25px;
 }
 
 .card-text {
@@ -304,7 +310,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
@@ -315,7 +321,6 @@
   animation: heart-scale 0.3s ease-in 0.1s both;
 }
 
-/* Анимация искр */
 @keyframes sparks-animation {
   0% {
     opacity: 0;
@@ -358,7 +363,8 @@
   position: relative;
 }
 
-.overlay {
+.button::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -370,12 +376,12 @@
   z-index: 1;
 }
 
-.button:hover .overlay {
+.button:hover::before {
   transform: translateX(0);
 }
 
 .button:hover .button__text,
-.button:hover .footer-icon {
+.button:hover .save-btn-icon {
   color: var(--button-color);
 }
 
@@ -394,11 +400,11 @@
   transition: color 0.5s ease-in-out;
 }
 
-.footer {
+.save-btn {
   margin: 0 auto;
 }
 
-.footer-button {
+.save-btn-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -409,14 +415,15 @@
   background: var(--background-color);
   border: var(--border-card);
   transition: color 0.5s ease-in-out;
+  margin-block-end: 100px;
 }
 
-.footer-button .button__text {
+.save-btn-button .button__text {
   color: var(--button-color);
   transition: color 0.5s ease-in-out;
 }
 
-.footer-icon {
+.save-btn-icon {
   inline-size: 28px;
   block-size: 28px;
   position: relative;
@@ -444,7 +451,7 @@ dialog {
   align-items: center;
 }
 
-.dialog-content .footer-icon {
+.dialog-content .save-btn-icon {
   inline-size: 39px;
   block-size: 39px;
   margin-inline-end: 12px;
@@ -461,7 +468,7 @@ dialog p {
   margin-block-end: 30px;
 }
 
-dialog button {
+.dialog-button {
   grid-column: span 2;
   color: var(--color);
   font-family: var(--accent-font-family);
@@ -485,14 +492,32 @@ dialog:not([open]) {
     padding-block-start: 137px;
   }
 
-  .footer-button {
+  .save-btn-button {
     display: flex;
     flex-direction: row;
-    padding: 20px 20px;
+    padding: 13px 18px;
+    margin-block-end: 103px;
   }
 
-  .footer-icon {
+  .save-btn-icon {
     inline-size: 21px;
     block-size: 21px;
   }
+
+  .card-image-container {
+    position: relative;
+    block-size: 696px;
+    inline-size: 100%;
+    overflow: hidden;
+  }
+
+  .card-content {
+    padding: 27px 25px 25px;
+  }
+
+  .card-image__label {
+    top: 25px;
+    right: 25px;
+  }
+
 }

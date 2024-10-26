@@ -16,6 +16,7 @@
   --border-card: solid 2px black;
   --border-label: white;
   --button-color: white;
+  --overlay-color: black;
   --icon-contour: black;
   --bg-image: repeating-linear-gradient(
       to right,
@@ -45,6 +46,7 @@
   --border-card: solid 2px #00cc14;
   --border-label: black;
   --button-color: #00cc14;
+  --overlay-color: #00cc14;
   --icon-contour: #00cc14;
   --bg-image: repeating-linear-gradient(
       to right,
@@ -75,6 +77,7 @@
     --border-card: solid 2px #00cc14;
     --border-label: black;
     --button-color: #00cc14;
+    --overlay-color: #00cc14;
     --icon-contour: #00cc14;
     --bg-image: repeating-linear-gradient(
         to right,

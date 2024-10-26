@@ -24,7 +24,12 @@
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button
+             type="button"
+              data-theme="dark"
+              class="theme-menu__button"
+              aria-label="Выбрать тёмную тему"
+            >
               Темно
             </button>
           </li>
@@ -34,12 +39,18 @@
               data-theme="auto"
               disabled
               class="theme-menu__button"
+              aria-label="Выбрать тему как в системе"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button
+             type="button"
+             data-theme="light"
+             class="theme-menu__button"
+             aria-label="Выбрать светлую тему"
+            >
               Светло
             </button>
           </li>
@@ -47,7 +58,7 @@
       </nav>
     </header>
     <main>
-      <section class="card">
+      <article class="card">
         <h3 class="card-title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h3>
@@ -55,7 +66,8 @@
           <img
             class="card-image card-image__filter-brightness"
             src="./images/card-1.png"
-            alt="Фургон катится в ночи"
+            alt="много вопросов у новичка"
+            loading="lazy"
           />
           <span class="card-image__label">начало</span>
         </div>
@@ -74,7 +86,11 @@
             </p>
           </div>
           <div class="card-buttons">
-            <button class="card__icon-button">
+            <button 
+              class="card__icon-button"
+              type="button"
+              aria-label="Нажать на иконку, чтобы поставить лайк"
+            >
               <svg
                 class="like-icon"
                 width="38"
@@ -83,7 +99,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g>
+                <g class="heart">
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -107,20 +123,24 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button
+             class="card__like-button button"
+             type="button"
+             aria-label="Нажать, чтобы поставить лайк"
+            >
               <span class="button__text">Like</span>
-              <div class="overlay"></div>
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h3 class="card-title">1 спринт: Я — чистый лист</h3>
         <div class="card-image-container">
           <img
             class="card-image card-image__filter-contrast"
             src="./images/card-2.png"
-            alt="Фургон катится в ночи"
+            alt="много сомнений у новичка"
+            loading="lazy"
           />
           <span class="card-image__label">сомнения</span>
         </div>
@@ -141,7 +161,11 @@
             </p>
           </div>
           <div class="card-buttons">
-            <button class="card__icon-button">
+            <button
+             class="card__icon-button"
+             type="button"
+             aria-label="Нажать на иконку, чтобы поставить лайк"
+            >
               <svg
                 class="like-icon"
                 width="38"
@@ -150,7 +174,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g>
+                <g class="heart">
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -174,20 +198,24 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button
+             class="card__like-button button"
+             type="button"
+             aria-label="Нажать, чтобы поставить лайк"
+            >
               <span class="button__text">Like</span>
-              <div class="overlay"></div>
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h3 class="card-title">1 спринт: А если не получится?</h3>
         <div class="card-image-container">
           <img
             class="card-image card-image__filter-blur"
             src="./images/card-3.png"
             alt="Фургон катится в ночи"
+            loading="первые успехи у новичка"
           />
           <span class="card-image__label">первый успех</span>
         </div>
@@ -209,7 +237,11 @@
             </p>
           </div>
           <div class="card-buttons">
-            <button class="card__icon-button">
+            <button
+             class="card__icon-button"
+             type="button"
+             aria-label="Нажать на иконку, чтобы поставить лайк"
+            >
               <svg
                 class="like-icon"
                 width="38"
@@ -218,7 +250,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g>
+                <g class="heart">
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -242,20 +274,24 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button
+             class="card__like-button button"
+             type="button"
+             aria-label="Нажать, чтобы поставить лайк"
+            >
               <span class="button__text">Like</span>
-              <div class="overlay"></div>
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h3 class="card-title">2 спринт: Погоня за идеалом</h3>
         <div class="card-image-container">
           <img
             class="card-image card-image__filter-opacity"
             src="./images/card-4.png"
-            alt="Фургон катится в ночи"
+            alt="первые думы новичка"
+            loading="lazy"
           />
           <span class="card-image__label">осознание</span>
         </div>
@@ -276,7 +312,11 @@
             </p>
           </div>
           <div class="card-buttons">
-            <button class="card__icon-button">
+            <button
+             class="card__icon-button"
+             type="button"
+             aria-label="Нажать на иконку, чтобы поставить лайк"
+            >
               <svg
                 class="like-icon"
                 width="38"
@@ -285,7 +325,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g>
+                <g class="heart">
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -309,20 +349,24 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button
+             class="card__like-button button"
+             type="button"
+             aria-label="Нажать, чтобы поставить лайк"
+            >
               <span class="button__text">Like</span>
-              <div class="overlay"></div>
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h3 class="card-title">2 спринт: О тех, кто рядом</h3>
         <div class="card-image-container">
           <img
             class="card-image card-image__filter-grayscale"
             src="./images/card-5.png"
-            alt="Фургон катится в ночи"
+            alt="первая команда новичка"
+            loading="lazy"
           />
           <span class="card-image__label">поддержка</span>
         </div>
@@ -347,7 +391,11 @@
             </p>
           </div>
           <div class="card-buttons">
-            <button class="card__icon-button">
+            <button
+             class="card__icon-button"
+             type="button"
+             aria-label="Нажать на иконку, чтобы поставить лайк"
+            >
               <svg
                 class="like-icon"
                 width="38"
@@ -356,7 +404,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g>
+                <g class="heart">
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -380,20 +428,24 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button
+             class="card__like-button button"
+             type="button"
+             aria-label="Нажать, чтобы поставить лайк"
+            >
               <span class="button__text">Like</span>
-              <div class="overlay"></div>
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h3 class="card-title">3 спринт: Обходные стратегии</h3>
         <div class="card-image-container">
           <img
             class="card-image card-image__filter-saturate"
             src="./images/card-6.png"
-            alt="Фургон катится в ночи"
+            alt="первые стратегии новичка"
+            loading="lazy"
           />
           <span class="card-image__label">творчество</span>
         </div>
@@ -413,7 +465,11 @@
             </p>
           </div>
           <div class="card-buttons">
-            <button class="card__icon-button">
+            <button
+             class="card__icon-button"
+             type="button"
+             aria-label="Нажать на иконку, чтобы поставить лайк"
+            >
               <svg
                 class="like-icon"
                 width="38"
@@ -422,7 +478,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g>
+                <g class="heart">
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -446,20 +502,24 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button
+             class="card__like-button button"
+             type="button"
+             aria-label="Нажать, чтобы поставить лайк"
+            >
               <span class="button__text">Like</span>
-              <div class="overlay"></div>
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h3 class="card-title">3 спринт: Когда опускаются руки</h3>
         <div class="card-image-container">
           <img
             class="card-image card-image__filter-sepia"
             src="./images/card-7.png"
-            alt="Фургон катится в ночи"
+            alt="новые неудачи новичка"
+            loading="lazy"
           />
           <span class="card-image__label">фокус</span>
         </div>
@@ -482,7 +542,11 @@
             </p>
           </div>
           <div class="card-buttons">
-            <button class="card__icon-button">
+            <button 
+             class="card__icon-button"
+             type="button"
+             aria-label="Нажать на иконку, чтобы поставить лайк"
+            >
               <svg
                 class="like-icon"
                 width="38"
@@ -491,7 +555,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g>
+                <g class="heart">
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -515,20 +579,24 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button
+             class="card__like-button button"
+             type="button"
+             aria-label="Нажать, чтобы поставить лайк"
+            >
               <span class="button__text">Like</span>
-              <div class="overlay"></div>
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h3 class="card-title">«Сейчас я здесь»</h3>
         <div class="card-image-container">
           <img
             class="card-image card-image__filter-multi"
             src="./images/card-8.png"
-            alt="Фургон катится в ночи"
+            alt="новичок продолжает идти вперед"
+            loading="lazy"
           />
           <span class="card-image__label">путь</span>
         </div>
@@ -550,7 +618,11 @@
             </p>
           </div>
           <div class="card-buttons">
-            <button class="card__icon-button">
+            <button
+             class="card__icon-button"
+             type="button"
+             aria-label="Нажать на иконку, чтобы поставить лайк"
+            >
               <svg
                 class="like-icon"
                 width="38"
@@ -559,7 +631,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g>
+                <g class="heart">
                   <path
                     class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -583,77 +655,47 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button
+             class="card__like-button button"
+             type="button"
+             aria-label="Нажать, чтобы поставить лайк"
+            >
               <span class="button__text">Like</span>
-              <div class="overlay"></div>
             </button>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <button
-        class="footer-button button"
-        type="button"
-        onclick="window['dialog-id'].showModal()"
-        aria-controls="dialog-id"
-      >
-        <svg class="footer-icon">
-          <use href="#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-        <div class="overlay"></div>
-      </button>
-      <dialog id="dialog-id" aria-label="Сохраняем воспоминания на дискету">
-        <div class="dialog-content">
-          <svg class="footer-icon">
-            <use href="#floppy"></use>
+      </article>
+      <article class="save-btn">
+        <button
+          class="save-btn-button button"
+          type="button"
+          onclick="window['dialog-id'].showModal()"
+          aria-controls="dialog-id"
+          aria-label="Открыть модальное окно"
+        >
+          <svg class="save-btn-icon">
+            <use xlink:href="./svg/floppy.svg#floppy"></use>
           </svg>
-          <p>Вставьте дискету, чтобы продолжить</p>
-          <button
-            class="button"
-            type="button"
-            onclick="window['dialog-id'].close()"
-          >
-            OK
-          </button>
-        </div>
-      </dialog>
-    </footer>
-    <svg xmlns="http://www.w3.org/2000/svg">
-      <symbol id="floppy" fill="currentColor" viewBox="0 0 40 40">
-        <g fill="currentColor">
-          <path
-            d="M0 0h3v3H0zM0 3h3v3H0zM0 6h3v3H0zM0 9h3v3H0zM0 12h3v3H0zM0 15h3v3H0zM0 18h3v3H0zM0 21h3v3H0zM0 24h3v3H0zM0 27h3v3H0zM0 30h3v3H0zM0 33h3v3H0zM0 36h3v3H0zM33 0v3h-3V0z"
-          />
-          <path
-            d="M30.003 0v3h-3V0zM27 0v3h-3V0zM24 0v3h-3V0zM20.999 0v3h-3V0z"
-          />
-          <path d="M18 0v3h-3V0zM14.999 0v3h-3V0z" />
-          <path d="M12 0v3H9V0zM8.996 0v3h-3V0z" />
-          <path
-            d="M6 0v3H3V0zM36 3v3h-3V3zM8.996 6v3h-3V6zM8.996 3v3h-3V3zM8.996 9v3h-3V9zM30.003 6v3h-3V6zM30.003 3v3h-3V3zM30.003 9v3h-3V9zM24 6v3h-3V6zM24 3v3h-3V3zM24 9v3h-3V9zM30.003 12v3h-3v-3zM27 12v3h-3v-3zM24 12v3h-3v-3zM20.999 12v3h-3v-3z"
-          />
-          <path d="M18 12v3h-3v-3zM14.999 12v3h-3v-3z" />
-          <path d="M12 12v3H9v-3zM8.996 12v3h-3v-3zM33 21v3h-3v-3z" />
-          <path
-            d="M30.003 21v3h-3v-3zM27 21v3h-3v-3zM24 21v3h-3v-3zM20.999 21v3h-3v-3z"
-          />
-          <path d="M18 21v3h-3v-3zM14.999 21v3h-3v-3z" />
-          <path
-            d="M12 21v3H9v-3zM8.996 21v3h-3v-3zM33 24v3h-3v-3zM8.996 24v3h-3v-3zM33 27v3h-3v-3zM8.996 27v3h-3v-3zM33 30v3h-3v-3zM8.996 30v3h-3v-3zM8.996 33v3h-3v-3zM33 33v3h-3v-3zM36 36v3h-3v-3zM33 36v3h-3v-3z"
-          />
-          <path
-            d="M30.003 36v3h-3v-3zM27 36v3h-3v-3zM24 36v3h-3v-3zM20.999 36v3h-3v-3z"
-          />
-          <path d="M18 36v3h-3v-3zM14.999 36v3h-3v-3z" />
-          <path d="M12 36v3H9v-3zM8.996 36v3h-3v-3z" />
-          <path
-            d="M6 36v3H3v-3zM39 39h-3v-3h3zM39 36h-3v-3h3zM39 33h-3v-3h3zM39 30h-3v-3h3zM39 27h-3v-3h3zM39 24h-3v-3h3zM39 21h-3v-3h3zM39 18h-3v-3h3zM39 15h-3v-3h3zM39 12h-3V9h3zM39 9h-3V6h3z"
-          />
-        </g>
-      </symbol>
-    </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+        <dialog id="dialog-id" aria-label="Сохраняем воспоминания на дискету">
+          <div class="dialog-content">
+            <svg class="save-btn-icon">
+              <use xlink:href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <p>Вставьте дискету, чтобы продолжить</p>
+            <button
+              class="button dialog-button"
+              type="button"
+              onclick="window['dialog-id'].close()"
+              aria-label="Закрыть модальное окно"
+            >
+            <span class="button__text">OK</span>
+            </button>
+          </div>
+        </dialog>
+      </article>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
