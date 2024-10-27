@@ -25,6 +25,7 @@
   color: var(--color);
   background-image: var(--bg-image);
   background-size: cover;
+  background-attachment: fixed;
   margin: 0 auto;
 }
 
@@ -108,15 +109,6 @@
   animation: move-arrow 0.5s ease-in-out infinite alternate;
 }
 
-@keyframes move-arrow {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(4px);
-  }
-}
-
 .theme-menu__button:hover {
   cursor: pointer;
   opacity: 0.6;
@@ -177,7 +169,8 @@
   block-size: 100%;
   object-fit: cover;
   object-position: center center;
-  border: var(--border-card);
+  border-top: var(--border-card);
+  border-bottom: var(--border-card);
 }
 
 .card-image__filter-brightness {
@@ -305,32 +298,9 @@
   transition: fill 0.3s linear 0.06s;
 }
 
-@keyframes heart-scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .like-icon.is-liked .heart {
   animation: heart-scale 0.3s ease-in 0.1s both;
-}
-
-@keyframes sparks-animation {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
@@ -454,7 +424,7 @@ dialog {
 .dialog-content .save-btn-icon {
   inline-size: 39px;
   block-size: 39px;
-  margin-inline-end: 12px;
+  margin-inline-end: 18px;
   margin-block-end: 30px;
 }
 
@@ -495,7 +465,7 @@ dialog:not([open]) {
   .save-btn-button {
     display: flex;
     flex-direction: row;
-    padding: 13px 18px;
+    padding: 15px 20px;
     margin-block-end: 103px;
   }
 
